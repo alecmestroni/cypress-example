@@ -1,17 +1,19 @@
+import searchPage from './pages/searchPage'
+
 describe('Search', { jiraKey: 'SWCRM-3979' }, () => {
   beforeEach(() => {
-    cy.gotoSearchPage()
+    searchPage.goto()
   })
 
   it('should return search results', () => {
-    cy.searchFor('cypress')
+    searchPage.searchFor('cypress')
 
-    cy.getSearchResults().should('have.length.at.least', 1)
+    searchPage.results().should('have.length.at.least', 1)
   })
 
   it('unfound search term should return no results message', () => {
-    cy.searchFor('sfdslkjsfkjslkdf')
+    searchPage.searchFor('sfdslkjsfkjslkdf')
 
-    cy.noSearchResults().should('be.visible')
+    searchPage.noResults().should('be.visible')
   })
 })

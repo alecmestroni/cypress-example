@@ -30,17 +30,11 @@
     "pretty": "standard --fix",
     "ci": "npx cypress run -q"
   },
-  "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
-    "standard": "^17.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "cypress": "^13.13.3",
     "cypress-multi-reporters": "^1.6.4",
     "cypress-xray-junit-reporter": "^1.1.7",
-    "cypress-xray-plugin": "^7.2.0",
-    "mocha": "^10.7.3",
-    "mochawesome": "^7.1.3",
-    "mochawesome-merge": "^4.3.0"
+    "cypress-xray-plugin": "^7.2.0"
   }
 }

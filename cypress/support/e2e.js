@@ -16,5 +16,3 @@
 // Import commands.js using ES2015 syntax:
 
 import 'cypress-xray-junit-reporter/support'
-import './pages/homePage.js'
-import './pages/searchPage.js'
